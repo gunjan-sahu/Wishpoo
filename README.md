@@ -8,9 +8,9 @@ Each wish lives in a Soroban smart contract — open for contributions until its
 
 | | |
 |---|---|
-| **Frontend** | `https://wishpool.vercel.app` |
+| **Frontend** | `https://wishpool-pi.vercel.app` |
 | **GitHub** | `https://github.com/YOUR_USERNAME/wishpool` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CONTRACT_ID` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CBRC7ZI2RDEXOX3F5ZVB3BHFXJTLBRVZC7FITKJSM44NTFOKISERCSTR` |
 | **Proof TX** | `https://stellar.expert/explorer/testnet/tx/TX_HASH` |
 
 ## How It Works
