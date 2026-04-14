@@ -8,8 +8,8 @@ Each wish lives in a Soroban smart contract — open for contributions until its
 
 | | |
 |---|---|
-| **Frontend** | `https://wishpool-pi.vercel.app` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CBRC7ZI2RDEXOX3F5ZVB3BHFXJTLBRVZC7FITKJSM44NTFOKISERCSTR` |
+| **Frontend** | `https://wishpool-app.vercel.app` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CBUVPUKGUFCPJ4L5FBEECGFAY4UCVKCAMZGGDFUSCQ77JBNVYR7R3O2C` |
 
 ## How It Works
 
@@ -18,6 +18,16 @@ Each wish lives in a Soroban smart contract — open for contributions until its
 3. **Fulfilled** — auto-marked when pool reaches the target
 4. **Claim** — wisher withdraws the pooled XLM any time
 
+## Why This Project Matters
+
+This project turns a familiar real-world workflow into a verifiable on-chain primitive on Stellar: transparent state transitions, user-authenticated actions, and deterministic outcomes.
+
+## Architecture
+
+- **Smart Contract Layer**: Soroban contract enforces business rules, authorization, and state transitions.
+- **Client Layer**: React + Vite frontend handles wallet UX, transaction composition, and real-time status views.
+- **Wallet/Auth Layer**: Freighter signs every state-changing action so operations are attributable and non-repudiable.
+- **Infra Layer**: Stellar Testnet + Soroban RPC for execution; Vercel for frontend hosting.
 ## Contract Functions
 
 ```rust
@@ -45,3 +55,5 @@ count() -> u64
 chmod +x scripts/deploy.sh && ./scripts/deploy.sh
 cd frontend && npm install && npm run dev
 ```
+
+
